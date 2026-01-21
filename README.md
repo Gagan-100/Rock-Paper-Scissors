@@ -3,6 +3,7 @@
 
 A simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.  
 The player competes against the computer, which makes a random move each round.
+Play: https://rock-paper-scissors74.netlify.app/
 
 ## 🚀 Features
 - Play Rock, Paper, or Scissors
