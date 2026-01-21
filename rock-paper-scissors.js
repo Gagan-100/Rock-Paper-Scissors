@@ -77,40 +77,40 @@ function playerGame(playerMove) {
 
   if (playerMove === "Rock") {
     if (computerMove === "Rock") {
-      result = "Game is tie! try again";
+      result = "It's a tie.";
     } else if (computerMove === "Paper") {
-      result = "You lose the game!, try again";
+      result = "You lose. Try again.";
     } else if (computerMove === "Scissors") {
-      result = "You won the game!, congrats!";
+      result = "You win!";
     }
   }
 
   if (playerMove === "Paper") {
     if (computerMove === "Rock") {
-      result = "You won the game!, congrats!";
+      result = "You win!";
     } else if (computerMove === "Paper") {
-      result = "Game is tie! try again";
+      result = "It's a tie.";
     } else if (computerMove === "Scissors") {
-      result = "You lose the game!, try again";
+      result = "You lose. Try again.";
     }
   }
 
   if (playerMove === "Scissors") {
     if (computerMove === "Rock") {
-      result = "You lose the game!, try again";
+      result = "You lose. Try again.";
     } else if (computerMove === "Paper") {
-      result = "You won the game!, congrats!";
+      result = "You win!";
     } else if (computerMove === "Scissors") {
-      result = "Game is tie! try again";
+      result = "It's a tie.";
     }
   }
 
   // update the score
-  if (result === "You won the game!, congrats!") {
+  if (result === "You win!") {
     score.wins += 1;
-  } else if (result === "You lose the game!, try again") {
+  } else if (result === "You lose. Try again.") {
     score.losses += 1;
-  } else if (result === "Game is tie! try again") {
+  } else if (result === "It's a tie.") {
     score.ties += 1;
   }
 
@@ -147,3 +147,4 @@ function pickComputerMove() {
 
   return computerMove;
 }
+
